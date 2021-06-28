@@ -1,0 +1,7 @@
+version: '3.6'
+services:
+  localtunnel:
+    build: .
+    command: -p 80 -s
+    network_mode: host
+    restart: always
